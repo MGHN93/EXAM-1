@@ -1,0 +1,116 @@
+:root {
+    --primary: #0361a8;
+    /*blue */
+    --secondary: #ff7442;
+    /*orange*/
+    --alternate: #c2444b;
+    /*red*/
+}
+
+header {}
+
+.top-navigation ul {
+    /* border: 1px solid black; */
+    margin-inline: 5px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+
+}
+
+.name {
+    border: 1px solid transparent;
+    margin-inline: 70px;
+    font-size: 30px;
+
+}
+
+.hero {
+    border: 1px solid transparent;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6) opacity(80%);
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    flex-direction: column;
+    color: whitesmoke;
+
+
+}
+
+.hero-text h4 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+    
+    
+}
+
+.hero-text p {
+    position: absolute;
+    bottom: 50px;
+    font-size: 20px;
+}
+
+.about-me{
+    border: 1px solid transparent;
+    margin-inline: 130px;
+    font-size: 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;*/
+} 
+
+.about-gilang h2{
+    font-size: 40px;
+}
+
+.about-gilang p{
+    line-height: 2.0;
+}
+
+.about-me ul{
+    list-style: none;
+    line-height: 2.0;
+}
+
+.work-experience{
+    border: 1px solid transparent;
+    margin-inline: 130px;
+    font-size: 20px;
+}
+
+.work-experience div{
+    border-bottom: 1px solid grey;
+    
+}
