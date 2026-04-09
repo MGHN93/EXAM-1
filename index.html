@@ -12,9 +12,14 @@
 <body>
     <header>
         <nav class="top-navigation">
-            <ul>
-                <li>Home</li>
-                <li>Background</li>
+
+            <div class="menu-icon">
+                <img style="width: 30px;" src="images/hamburger-icon-removebg-preview.png" alt="menu-bar">
+            </div>
+
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#me">Background</a></li>
                 <li>Aviation</li>
                 <li class="name">M. Gilang Hendrian N</li>
                 <li>Webdev</li>
@@ -23,6 +28,15 @@
             </ul>
 
         </nav>
+
+        <div class="dropdown">
+            <a href="index.html">Home</a>
+            <a href="#me">Background</a>
+            <a href="">Aviation</a>
+            <a href="">Webdev</a>
+            <a href="">Miscellanous</a>
+            <a href="">Contact</a>
+        </div>
     </header>
 
     <main>
@@ -31,7 +45,7 @@
         <section class="hero">
             <img src="images/image.png" alt="background">
             <div class="hero-text">
-                <h4>Bringing Aviation Precision <br> into Web Development</h4>
+                <h4>BRINGING AVIATION PRECISION <br>INTO WEB DEVELOPMENT</h4>
                 <p>Aeronautical professional building reliable, user-focused web application with HTML, CSS, &
                     Javascript</p>
             </div>
@@ -41,8 +55,9 @@
         <!-- ABOUT ME SECTION -->
 
         <section class="about-me">
+            <h2 id="me">About Gilang</h2>
             <div class="about-gilang">
-                <h2>About Gilang</h2>
+                
                 <p>
                     Thank you for visiting this page. His full name is Muhammad Gilang Hendrian Nugroho, but he goes by
                     Gilang. he is a professional with a background in aviation and where he holds a bachelors degree in
@@ -64,20 +79,42 @@
         <!-- this experience section is inspired by alexpate.com/info -->
         <section class="work-experience">
             <h3>Work Experiences</h3>
-            <div>
-                <p>LION AIR GROUP <br> Flight Data Analyst</p>
-                <p>May 2018 - March 2019</p>
+
+            <div class="experience-item">
+                <img src="images/lion_air-removebg-preview.png" alt="lion air">
+                <div class="experiences-text">
+                    <h3>LION AIR GROUP</h3>
+                    <p class="role">Flight Data Analyst</p>
+                    <p class="date">May 2018 - March 2019</p>
+
+                </div>
             </div>
 
-            <div>
-                <p>PT.RAPP <br> AFIS Officer</p>
-                <p>June 2020 - May 2020 | June 2021 - Sept 2021</p>
+            <div class="experience-item">
+                <img src="images/atc-removebg-preview.png" alt="call center">
+                <div class="experiences-text">
+                    <h3>PT.RAPP</h3>
+                    <p class="role">AFIS Officer</p>
+                    <p class="date">June 2020 - May 2020 | June 2021 - Sept 2021</p>
+
+                </div>
             </div>
 
-            <div>
-                <p>PT. AFIKS ADAYA INTERNASIONAL <br> CCR & CSR</p>
-                <p>February 2022 - Now (ongoing)</p>
+            <div class="experience-item">
+                <img src="images/call center.png" alt="ATC">
+                <div class="experiences-text">
+                    <h3>PT. AFIKS ADAYA INTERNASIONAL</h3>
+                    <p class="role">CCR & CSR</p>
+                    <p class="date">February 2022 - Now (ongoing)</p>
+
+                </div>
+                
             </div>
+
+            <div class="resume">
+                <p><a href="misc file/RESUME 3.0.pdf">Download Resume</a></p>
+            </div>
+
         </section>
 
 
