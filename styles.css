@@ -11,6 +11,12 @@
 
 *{
    font-family: sans-serif;
+   box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
 }
 
 html{
@@ -24,14 +30,12 @@ html{
 } */
 
 .container{
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-body{
-    margin: 0;
-}
+
 
 
 
@@ -44,7 +48,7 @@ body{
     color: rgb(90, 90, 90);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: 60px;
+    font-size: clamp(1rem, 1.5vw, 2rem);
     position: relative;
     z-index: 10;
 }
@@ -61,14 +65,14 @@ a{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 60px;
+    /* font-size: clamp(14px, 1.5vw, 18px); */
 }
 
 .name {    
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    font-size: clamp(1rem, 2.5vw, 2rem);
     color: black;
 }
 
@@ -78,7 +82,7 @@ a{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 60px;
+    /* font-size: clamp(14px, 1.5vw, 18px); */
 }
 
 .menu-icon{
@@ -111,15 +115,17 @@ a{
 
 .hero {
     border: 1px solid transparent;
-    position: relative;
     height: 100vh;
+    background-image: url(images/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
-.hero img {
+/* .hero img {
     position: absolute;
     inset: 0;
     z-index: -1;
@@ -127,7 +133,7 @@ a{
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6) opacity(80%);
-}
+} */
 
 .hero-text {
     display: flex;
@@ -143,11 +149,11 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center; */
-    font-size: clamp(28px, 5vw, 48px);
+    font-size: clamp(1.75rem, 5vw, 3rem);
 }
 
 .hero-text p {
-    font-size: clamp(14px, 2vw, 20px);
+    font-size: clamp(.875rem, 2vw, 1.25rem);
 }
 
 .hero-altpg{
@@ -193,13 +199,13 @@ a{
 }
 
 .about-me h2{
-    font-size: 80px;
+    font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
 .about-gilang p{
     line-height: 2.0;
     color: rgb(90, 90, 90);
-    font-size: 55px;
+    font-size: clamp(.875rem, 2vw, 1.25rem);
     
 }
 
@@ -208,7 +214,9 @@ a{
     line-height: 2.0;
 }
 
-
+.work-experience{
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
 .experience-item{
     border-bottom: 1px solid grey;
     display: flex;
@@ -224,7 +232,7 @@ a{
 }
 
 .experience-item img{
-    width: 150px;
+    width: 100%;
     border-radius: 30px;
     
 }
