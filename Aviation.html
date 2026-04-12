@@ -12,10 +12,6 @@
     <header>
         <nav class="top-navigation">
 
-            <div class="menu-icon">
-                <img style="width: 30px;" src="images/hamburger-icon-removebg-preview.png" alt="menu-bar">
-            </div>
-
             <div class="nav-bar1">
                 <p><a href="index.html">Home</a></p>
                 <p><a href="index.html#me">Background</a></p>
@@ -28,23 +24,58 @@
 
             <div class="nav-bar2">
                 <p><a href="webdev.html">Webdev</a></p>
-                <p>Certifications</p>
-                <p>Contact</p>
+                <div class="dropdown">
+                    <p>Certifications</p>
+                    <div class="dropdown-content">
+                        <p>IELTS</p>
+                        <p>IELP</p>
+                        <p>AFIS LICENSE</p>
+                        <p>AFIS CERTIFICATE</p>
+
+                    </div>
+                </div>
+                <p><a href="#footer">Contact</a></p>
             </div>
 
         </nav>
+
+        <div class="menu-icon" id="menu-btn">
+            ☰
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="close-btn" id="close-btn">✕</div>
+
+            <div class="mobile-links">
+                <a href="index.html">Home</a>
+                <a href="#me">Background</a>
+                <a href="Aviation.html">Aviation</a>
+                <a href="webdev.html">Webdev</a>
+                <div class="mobile-links-dropdown" id="cert-toggle">
+                    <span>Certifications +</span>
+                    <div class="mobile-dropdown-content" id="cert-menu">
+                        <a href="">IELTS</a>
+                        <a href="">IELP</a>
+                        <a href="">AFIS LICENSE</a>
+                        <a href="">AFIS CERTIFICATE</a>
+
+                    </div>
+                </div>
+                <a href="#footer">Contact</a>
+            </div>
+        </div>
     </header>
     <main>
         <!-- HERO SECTION -->
-        <section class="hero-altpg container">
-            <img src="images/turbofan.png" alt="background">
+        <section class="hero-altpg">
+            <!-- <img src="images/turbofan.png" alt="background"> -->
         </section>
 
         <!-- CAMPUS SECTION -->
 
         <section class="aviation-experience container">
             <h3>Universitas Dirgantara Marsekal Suryadarma</h3>
-            <div class="aviation-item">
+            <div class="aviation-item container">
                 <img src="images/hangar-unsurya.png" alt="lion air">
                 <div class="experiences-text">
                     <p>Universitas Dirgantara Marsekal Suryadarma is a private university under the auspices of the
@@ -59,7 +90,7 @@
             </div>
 
             <h3>Lion Group</h3>
-            <div class="aviation-item">
+            <div class="aviation-item container">
                 <img src="images/lion.png" alt="lion air">
                 <div class="experiences-text">
                     <p>
@@ -86,7 +117,7 @@
             </div>
 
             <h3>Indonesia Aviation School</h3>
-            <div class="aviation-item">
+            <div class="aviation-item container">
                 <img src="images/airnav.png" alt="lion air">
                 <div class="experiences-text">
                     <p>
@@ -138,21 +169,43 @@
                 </div>
             </div>
 
-
-
-            </div>
-
-
         </section>
     </main>
 
 
-    <main>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
 
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
 
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
 
-    </main>
+         const certToggle = document.getElementById('cert-toggle');
+
+        certToggle.addEventListener('click', () => {
+            certToggle.classList.toggle('active');
+        });
+    </script>
 
 </body>
+
+<footer>
+    <nav class="footer-navigation" id="footer">
+
+        <div class="footer-bar">
+            <p>EMAIL: noemail@gmail.com</p>
+            <p>LINKEDIN: muhammadgilang</p>
+            <p>GITHUB: MGHN93</p>
+            <p>NO: (+62)000-0000-0000</p>
+        </div>
+    </nav>
+
+</footer>
 
 </html>
