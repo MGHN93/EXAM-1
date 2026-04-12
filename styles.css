@@ -29,6 +29,10 @@ html{
     padding: 0 20px;
 }
 
+body{
+    margin: 0;
+}
+
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -127,26 +131,23 @@ a{
 
 .hero-text {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: whitesmoke;
 }
 
 .hero-text h4 {
     
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     font-size: clamp(28px, 5vw, 48px);
 }
 
 .hero-text p {
-    position: absolute;
-    bottom: 50px;
-    font-size: 60px;
+    font-size: clamp(14px, 2vw, 20px);
 }
 
 .hero-altpg{
