@@ -3,10 +3,6 @@
 :root {
     --primary: #0361a8;
     /*blue */
-    --secondary: #ff7442;
-    /*orange*/
-    --alternate: #c2444b;
-    /*red*/
 }
 
 * {
@@ -65,7 +61,6 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* font-size: clamp(14px, 1.5vw, 18px); */
 }
 
 .name {
@@ -84,7 +79,6 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* font-size: clamp(14px, 1.5vw, 18px); */
 }
 
 .menu-icon {
@@ -144,7 +138,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-size: clamp(14px, 1.5vw, 18px); */
 }
 
 
@@ -157,30 +150,37 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-
-.hero-text {
+.hero-title {
+    color: whitesmoke;
+    font-size: clamp(1.75rem, 5vw, 3rem);
+    line-height: 1.2;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    margin-left: clamp(20px, 5vw, 100px);
+}
+
+.hero-title span {
+    display: block;
+}
+
+.line2 {
+    margin-left: clamp(20px, 5vw, 100px);
+}
+
+.hero p {
     color: whitesmoke;
-}
-
-.hero-text h4 {
-
-    font-size: clamp(1.75rem, 5vw, 3rem);
-}
-
-.hero-text p {
     font-size: clamp(.875rem, 2vw, 1.25rem);
+    display: flex;
+    justify-content: column;
+    margin-left: clamp(20px, 2vw, 100px);
 }
+
 
 .hero-altpg {
     border: 1px solid transparent;
@@ -246,9 +246,6 @@ a {
     margin-left: 10px;
     font-size: clamp(.875rem, 2vw, 1.25rem);
 }
-
-
-
 
 .experience-item img {
     width: 5%;
@@ -446,9 +443,9 @@ a {
         display: block;
         font-size: 28px;
         cursor: pointer;
-        position: absolute;
+        /* position: absolute;
         left: 20px;
-        top: 20px;
+        top: 20px; */
         z-index: 20;
     }
 
@@ -508,8 +505,8 @@ a {
     }
 
     .mobile-links-dropdown span {
-    padding: 10px 0;
-}
+        padding: 10px 0;
+    }
 
     .mobile-dropdown-content {
         display: none;
@@ -529,9 +526,9 @@ a {
     }
 
     .mobile-links-dropdown.active .mobile-dropdown-content {
-    display: flex;
-    flex-direction: column;
-}
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
