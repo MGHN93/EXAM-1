@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- THIS WHOLE WEB PAGE IS INSPIRED BY louispeck.com -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +66,7 @@
             </div>
         </nav>
 
-        
+
     </header>
     <main>
         <!-- HERO SECTION -->
@@ -188,7 +189,7 @@
             mobileMenu.classList.remove('active');
         });
 
-         const certToggle = document.getElementById('cert-toggle');
+        const certToggle = document.getElementById('cert-toggle');
 
         certToggle.addEventListener('click', () => {
             certToggle.classList.toggle('active');
@@ -201,10 +202,34 @@
     <nav class="footer-navigation" id="footer">
 
         <div class="footer-bar">
-            <p>EMAIL: noemail@gmail.com</p>
-            <p>LINKEDIN: muhammadgilang</p>
-            <p>GITHUB: MGHN93</p>
-            <p>NO: (+62)000-0000-0000</p>
+            <div class="footer-item">
+                <img src="images/gmail.png" alt="gmail">
+                <div class="footer-text">
+                    <p>noemail@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-item">
+                <img src="images/linkedin.png" alt="linkedin">
+                <div class="footer-text">
+                    <p>muhammadgilang</p>
+                </div>
+            </div>
+            
+            <div class="footer-item">
+                <img src="images/github.png" alt="github">
+                <div class="footer-text">
+                    <p>MGHN93</p>
+                </div>
+            </div>
+            
+            <div class="footer-item">
+                <img src="images/WA.png" alt="WA">
+                <div class="footer-text">
+                    <p>(+62)000-0000-0000</p>
+                </div>
+            </div>
+            
         </div>
     </nav>
 
