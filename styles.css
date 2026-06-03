@@ -447,7 +447,12 @@ a {
     font-weight: bold;
 }
 
-
+.menu-icon,
+    .mobile-menu,
+    .close-btn,
+    .mobile-links {
+        display: none;
+    }
 
 @media screen and (max-width:768px) {
 
@@ -568,12 +573,9 @@ a {
 
 }
 
+
+
 @media screen and (min-width:769px) {
 
-    .menu-icon,
-    .mobile-menu,
-    .close-btn,
-    .mobile-links {
-        display: none;
-    }
+    
 }
